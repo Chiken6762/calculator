@@ -14,4 +14,8 @@ public class stocks {
     public static double calculateTotalValue(double price, int quantity) {
         return price * quantity;
     }
+    
+    public static double calculateProfitLoss(double buyPrice, double currentPrice, int quantity) {
+        return (currentPrice - buyPrice) * quantity;
+    }
 }
